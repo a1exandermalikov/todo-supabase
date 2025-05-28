@@ -10,7 +10,7 @@
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist -b gh-pages"
 	},
 	"dependencies": {
 		"@supabase/supabase-js": "^2.49.8",
@@ -26,6 +26,7 @@
 		"eslint-plugin-react-hooks": "^5.2.0",
 		"eslint-plugin-react-refresh": "^0.4.19",
 		"globals": "^16.0.0",
-		"vite": "^6.3.5"
+		"vite": "^6.3.5",
+		"gh-pages": "^5.0.0"
 	}
 }

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+
+:root {
+	--main-color: #1c1d29;
+	--focus: #222550;
+	--brand-font: 'Oxanium';
+	--system-font: 'Exo 2';
+	--secondary-color: black;
+	--text-color: #c9c9c9;
+	--border: 0.2vw;
+	--border-radius: 0.5vw;
+	--text-muted: gray;
+	--del-hover: rgb(125, 0, 0);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--system-font);
+	color: rgb(222, 222, 222);
+	outline: none;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+body {
+	background-color: var(--main-color);
+}
+
+main ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1vw;
+	padding: 2vw 0;
+}

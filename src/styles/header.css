@@ -1,0 +1,97 @@
+header {
+	display: flex;
+	align-items: center;
+	padding: 1vw 3vw;
+	background-color: var(--secondary-color);
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: end;
+	gap: 0.5vw;
+	cursor: pointer;
+	transition: all ease 0.1s;
+}
+
+.logo:hover {
+	filter: drop-shadow(0 0 15px #fffffff0);
+}
+
+.logo img {
+	width: 2.8vw;
+	transition: all ease 0.2s;
+}
+
+.logo h1 {
+	font-size: 1.8vw;
+	font-weight: 500;
+	letter-spacing: 0.1vw;
+	font-family: var(--brand-font);
+}
+
+.logo span {
+	color: var(--text-muted);
+	font-size: 1vw;
+	font-weight: 300;
+	margin-left: 0.5vw;
+	font-family: var(--system-font);
+}
+
+.search-field {
+	display: flex;
+	align-items: stretch;
+	border: var(--border) solid var(--main-color);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	transition: all ease 0.2s;
+}
+
+.search-field input {
+	font-size: 1vw;
+	background-color: transparent;
+	border: none;
+	width: 25vw;
+	padding: 0.5vw 1vw;
+	transition: all ease 0.2s;
+}
+
+.search-field input::placeholder {
+	color: gray;
+}
+
+.search-field button {
+	padding: 0.5vw 1vw;
+	border: none;
+	cursor: pointer;
+	background-color: var(--main-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: var(--border) solid var(--main-color);
+	transition: all ease 0.2s;
+}
+
+.search-field img {
+	width: 2vw;
+	transform: scale(1.05);
+	transition: all ease 0.1s;
+}
+
+.search-field button:active img {
+	transform: scale(0.9);
+}
+
+.focused {
+	border: var(--border) solid var(--focus);
+	filter: brightness(1.5);
+}
+
+.focused button {
+	background-color: var(--focus);
+	border-left: var(--border) solid var(--focus);
+}
+
+.focused input {
+	width: 35vw;
+}

@@ -1,0 +1,42 @@
+.list-item {
+	display: flex;
+	align-items: start;
+	background-color: var(--main-color);
+	width: max-content;
+	width: 50vw;
+	white-space: normal; /* ✅ позволяет переносу строки */
+	justify-content: space-between;
+	overflow: hidden;
+	border-radius: var(--border-radius);
+	border: var(--border) solid var(--secondary-color);
+	transition: all ease 0.2s;
+	filter: brightness(1.5);
+}
+
+.list-item p {
+	padding: 1vw 1vw;
+	font-size: 1.2vw;
+}
+
+.list-item button {
+	padding: 0.5vw 0.5vw;
+	border: none;
+	cursor: pointer;
+	background-color: var(--secondary-color);
+	border-left: var(--border) solid var(--secondary-color);
+	border-radius: 0 0 0 0.5vw;
+	transition: all ease 0.2s;
+}
+
+.list-item button img {
+	width: 1.2vw;
+}
+
+.list-item button:hover {
+	background-color: var(--del-hover);
+	border-left: var(--border) solid var(--del-hover);
+}
+
+.delHover {
+	border: var(--border) solid var(--del-hover);
+}

@@ -95,3 +95,79 @@ header {
 .focused input {
 	width: 35vw;
 }
+
+@media (max-width: 768px) {
+	header {
+		padding: 2vw 4vw;
+	}
+
+	.logo img {
+		width: 4vw;
+	}
+
+	.logo h1 {
+		font-size: 2.5vw;
+	}
+
+	.logo span {
+		font-size: 1.5vw;
+	}
+
+	.search-field input {
+		width: 30vw;
+		font-size: 1.5vw;
+		padding: 0vw 1.5vw;
+	}
+
+	.search-field button {
+		padding: 1vw 1.5vw;
+	}
+
+	.focused input {
+		width: 40vw;
+	}
+}
+
+@media (max-width: 425px) {
+	header {
+		padding: 4vw 4vw;
+		display: flex;
+		flex-direction: column;
+		gap: 3vw;
+	}
+
+	.logo {
+		justify-content: start;
+		width: 100%;
+	}
+
+	.logo img {
+		width: 10vw;
+	}
+
+	.logo h1 {
+		font-size: 6vw;
+	}
+
+	.logo span {
+		font-size: 3vw;
+	}
+
+	.search-field {
+		width: 100%;
+	}
+
+	.search-field input {
+		width: 100%;
+		font-size: 3.5vw;
+		padding: 0vw 2vw;
+	}
+
+	.search-field button {
+		padding: 2vw 2vw;
+	}
+
+	.search-field img {
+		width: 5vw;
+	}
+}

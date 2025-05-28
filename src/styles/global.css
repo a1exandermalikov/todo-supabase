@@ -13,6 +13,20 @@
 	--del-hover: rgb(125, 0, 0);
 }
 
+@media (max-width: 768px) {
+	:root {
+		--border: 0.3vw;
+		--border-radius: 0.5vw;
+	}
+}
+
+@media (max-width: 425px) {
+	:root {
+		--border: 0.6vw;
+		--border-radius: 1vw;
+	}
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,6 +36,7 @@
 	outline: none;
 	user-select: none;
 	-webkit-user-drag: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -34,4 +49,22 @@ main ul {
 	align-items: center;
 	gap: 1vw;
 	padding: 2vw 0;
+}
+
+main ul li {
+	list-style: none;
+}
+
+@media (max-width: 768px) {
+	main ul {
+		gap: 2vw;
+		padding: 4vw 0;
+	}
+}
+
+@media (max-width: 425px) {
+	main ul {
+		gap: 4vw;
+		padding: 4vw;
+	}
 }

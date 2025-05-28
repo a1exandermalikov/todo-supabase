@@ -40,3 +40,37 @@
 .delHover {
 	border: var(--border) solid var(--del-hover);
 }
+
+@media (max-width: 768px) {
+	.list-item {
+		width: 70vw;
+	}
+
+	.list-item p {
+		font-size: 2vw;
+		padding: 1.5vw;
+	}
+
+	.list-item button img {
+		width: 2vw;
+	}
+}
+
+@media (max-width: 425px) {
+	.list-item {
+		width: 100%;
+	}
+
+	.list-item p {
+		font-size: 4vw;
+		padding: 3vw;
+	}
+
+	.list-item button img {
+		width: 4.5vw;
+	}
+
+	.list-item button {
+		padding: 1vw 1vw;
+	}
+}
